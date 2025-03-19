@@ -38,7 +38,7 @@ This project implements a comprehensive system for analyzing hotel booking data 
 
 3. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements-file.txt
    ```
 
 4. Download the dataset:
