@@ -23,7 +23,7 @@ This project implements a comprehensive system for analyzing hotel booking data 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hotel-booking-analytics.git
+   git clone:https://github.com/Rakshithavr27/Enhanceing-LLM-powered-Booking-analytics-QA-using-RAG.git
    cd hotel-booking-analytics
    ```
 
@@ -37,9 +37,8 @@ This project implements a comprehensive system for analyzing hotel booking data 
    ```
 
 3. Install dependencies:
-   ```bash
-   pip install -r requirements-file.txt
-   ```
+     pip install -r requirements-file.txt
+
 
 4. Download the dataset:
    - Download the hotel booking dataset from [Kaggle](https://www.kaggle.com/jessemostipak/hotel-booking-demand)
@@ -48,29 +47,25 @@ This project implements a comprehensive system for analyzing hotel booking data 
 ### Running the System
 
 1. Start the API server:
-   ```bash
    python app.py
-   ```
-
 2. Access the API at `http://localhost:8000`
-
 3. API Documentation is available at `http://localhost:8000/docs`
 
-## API Endpoints
+API Endpoints
 
-### POST /analytics
+POST /analytics
 Returns analytics reports based on the hotel booking data.
 
-**Request Body**:
-```json
+Request Body:
+json
 {
   "time_period": "monthly",
   "specific_analysis": ["revenue_trends", "cancellation_rate"]
 }
-```
 
-**Response**:
-```json
+
+Response:
+json
 {
   "data": {
     "revenue_trends": [...],
@@ -78,32 +73,32 @@ Returns analytics reports based on the hotel booking data.
   },
   "processing_time_seconds": 0.123
 }
-```
 
-### POST /ask
+
+ POST /ask
 Answers questions about the booking data using RAG.
 
-**Request Body**:
-```json
+Request Body:
+json
 {
   "question": "Show me total revenue for July 2017"
 }
-```
 
-**Response**:
-```json
+
+Response:
+json
 {
   "question": "Show me total revenue for July 2017",
   "answer": "The total revenue for July 2017 was $1,234,567.89.",
   "processing_time_seconds": 0.456
 }
-```
 
-### GET /health
+
+GET /health
 Checks the system status.
 
-**Response**:
-```json
+Response:
+json
 {
   "status": "healthy",
   "components": {
@@ -113,13 +108,13 @@ Checks the system status.
   },
   "timestamp": "2023-09-15T12:34:56.789Z"
 }
-```
 
-### GET /query_history
+
+ GET /query_history
 Returns the history of queries asked to the system.
 
-**Response**:
-```json
+Response:
+json
 {
   "history": [
     {
@@ -130,9 +125,9 @@ Returns the history of queries asked to the system.
     ...
   ]
 }
-```
 
-## System Architecture
+
+ System Architecture
 
 The system consists of the following components:
 
